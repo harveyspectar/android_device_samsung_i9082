@@ -1,15 +1,15 @@
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Get the long list of APNs
+PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i9082/device_i9082.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9082
-PRODUCT_NAME := cm_i9082
+PRODUCT_NAME := aosp_i9082
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-I9082

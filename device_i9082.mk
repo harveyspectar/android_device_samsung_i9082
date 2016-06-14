@@ -5,8 +5,8 @@ $(call inherit-product, vendor/samsung/i9082/i9082-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 480
-TARGET_SCREEN_HEIGHT := 800
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # Init files
 PRODUCT_COPY_FILES += \
@@ -28,10 +28,11 @@ PRODUCT_COPY_FILES += \
 
 # Packages
 PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
     charger_res_images \
-    Gello \
-    SamsungServiceMode \
-    Snap
+    Launcher3 \
+    SoundRecorder \
+    Stk
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
