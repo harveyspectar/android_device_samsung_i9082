@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
+# Backup Services whitelist
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/backup.xml:system/etc/sysconfig/backup.xml
+
 # System properties
 $(call inherit-product, device/samsung/i9082/system_prop.mk)
 
