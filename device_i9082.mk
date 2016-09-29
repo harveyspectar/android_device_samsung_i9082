@@ -30,12 +30,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     Gello \
-    SamsungServiceMode \
     Snap
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -94,10 +92,7 @@ PRODUCT_COPY_FILES += \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 # System properties
-$(call inherit-product, device/samsung/i9082/system_prop.mk)
+$(call inherit-product, $(LOCAL_PATH)/system_prop.mk)
 
 # Dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
-
-PRODUCT_NAME := full_i9082
-PRODUCT_DEVICE := i9082
