@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROM>
+	<!--ROM Name-->
+		<RomName>Bliss</RomName>
+
+	<!--THIS NEEDS TO BE EDITED EVERY NEW UPDATE-->
+		<VersionName>Bliss-v6.4-i9082-UNOFFICIAL-20161020-1610</VersionName>
+
+	<!--THIS NEEDS TO BE EDITED EVERY NEW UPDATE-->
+		<VersionNumber type="integer">2016102016</VersionNumber>
+
+	<!--THIS NEEDS TO BE EDITED EVERY NEW UPDATE-->
+		<DirectUrl>https://tx1.androidfilehost.com/dl/UDq-RBCR12axEIApgmUx9Q/1477214750/529152257862668926/Bliss-v6.4-i9082-UNOFFICIAL-20161020-1610.zip</DirectUrl>
+
+	<!--Bliss Android Version-->
+		<Android>6.0.1</Android>
+
+	<!--THIS NEEDS TO BE EDITED EVERY NEW UPDATE-->
+	<!-- You can disable MD5 checking like this: <CheckMD5 nil="true" />-->
+		<CheckMD5>8efead5c4893b998023fe0ac136ac536</CheckMD5>
+
+	<!--THIS NEEDS TO BE EDITED EVERY NEW UPDATE-->
+	<!--Please enter this in BYTES only. Otherwise an incorrect value will be shown-->
+		<FileSize type="integer">358400941</FileSize>
+
+	<!--Maintainer Name/Last Uploader's Name-->
+		<Developer>osas514</Developer>
+
+	<!--Official Bliss Website-->
+		<WebsiteURL>http://blissroms.com/</WebsiteURL>
+
+	<!-- Your Donate URL (Please use goo.gl to shorten to avoid CDATA requirement -
+	  Default: http://goo.gl/k6jPX9 will go to Shaun)-->
+		<DonateURL></DonateURL>
+
+	<!--Put the changelog here... Use DaringFireball's Markdown to format it-->
+	<!--Surround special characters with the CDATA tags or your XML will NOT parse-->
+	<Changelog>
+	### Changelog 2016102016
+
+	https://raw.githubusercontent.com/Osas514/changelog/master/Bliss-changelog
+	</Changelog>
+
+</ROM>
