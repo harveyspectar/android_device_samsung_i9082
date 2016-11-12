@@ -91,6 +91,10 @@ on post-fs-data
     chown system system /sys/class/backlight/touchkey-led/brightness
     chmod 0660 /sys/class/backlight/touchkey-led/brightness
 
+    # MTP Device permission.
+    chmod 0660 /dev/mtp_usb
+    chown system mtp /dev/mtp_usb
+
 on boot
     # SISO-ANDR_PERF :: START Changing scheduler to noop during boot
     setprop sys.io.scheduler noop
