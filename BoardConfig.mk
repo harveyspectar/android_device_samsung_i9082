@@ -111,5 +111,9 @@ MALLOC_SVELTE := true
 # Some of our vendor libs have text relocations
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
+# Camera
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+BOARD_GLOBAL_CFLAGS += -DMETADATA_CAMERA_SOURCE
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
